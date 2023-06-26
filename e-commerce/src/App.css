@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  
+}
+
+.App{
+  width: 820px;
+  margin: auto;
+}
+
+.navbar{
+font-family: 'Kumbh Sans', sans-serif;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 40px;
+ padding-top: 10px;
+ font-size: 16px;
+ box-shadow: 5px black;
+}
+
+.nav-logo{
+  height: 17px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+ }
+
+ .cart-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ 
+ .cart-avatar img{
+  width: 40px;
+  padding-left: 40px;
+  height: 40px;
+ }
+
+.nav-list{
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  padding-left: 30px;
+  color: hsl(223, 64%, 98%) ;
+}
+
+a{
+  display: block;
+  color:  hsl(233, 8%, 62%);
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  padding-top: 9px;
+}
+.nav-item {
+  text-decoration: none;
+  padding-left: 10px;
+ 
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  
+}
+
+.showcase {
+  height: 500px;
+}
+
+.informations{
+  width: 350px;
+  padding-top:50px ;
+}
+
+.preview img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.thumbnail{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.thumbnail img {
+  width: 75px;
+  border-radius: 8px;
+}
+
+.company{
+  color: hsl(26, 100%, 55%) ;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 15px;
+}
+
+.details{
+  font-size: 13px;
+  margin-top: 20px;
+  color:hsl(220, 14%, 75%) ;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.price{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+}
+
+.discount{
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  width: 40px;
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+
+.old-price{
+  margin-top: 15px;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
+
+.buy {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.addsub{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(220, 14%, 75%);
+  height: 35px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 20px;
+  color:hsl(219, 9%, 45%) ;
+}
+
+.addtocart{
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 180px;
+  background-color: hsl(26, 100%, 55%) ;
+  color: white;
+}
+
+.Add-to-cart{
+  margin-left: 10px;
+}
