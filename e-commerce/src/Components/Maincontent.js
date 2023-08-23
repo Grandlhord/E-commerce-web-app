@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import product1 from '../images/image-product-1.jpg'
 import product2 from '../images/image-product-2.jpg'
 import product3 from '../images/image-product-3.jpg'
@@ -12,7 +12,25 @@ import minus from '../images/icon-minus.svg'
 import addcart from '../images/icon-cart.svg'
 
 
+
+
+
 export default function Maincontent(){
+
+    const [count,setCount]= useState(0)
+    
+    const increment=()=>{
+        setCount(count+1)
+    }
+
+    const decrement=()=>{
+        if(count){
+            setCount(count-1)
+        }else if (count <=0){
+            return count
+        }
+        
+    }
 
     return (
         <section className="main-content">
@@ -42,15 +60,14 @@ export default function Maincontent(){
 
                 <div className="buy">
                     <div className="addsub">
-                        <img src={minus} alt="minus-sign"/>
-                        <p className="total">0</p>
-                        <img src={plus} alt="plus-sign"/>
+                        <img src={minus} alt="minus-sign" onClick={decrement}/>
+                        <p className="total">{count}</p>
+                        <img src={plus} alt="plus-sign"onClick={increment}/>
                     </div>
 
-                    <button className="addtocart"><img src={addcart} alt="carts"/><p className="Add-to-cart">Add to cart</p></button>
+                    <button className="addtocart" ><img src={addcart} alt="carts"/><p className="Add-to-cart">Add to cart</p></button>
                 </div>
             </div>
         </section>
-
     )
 }
