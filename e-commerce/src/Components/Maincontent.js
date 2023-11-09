@@ -39,10 +39,23 @@ export default function Maincontent(){
                     <img src={product1} alt= "product1" />
                 </div>
                 <div className="thumbnail">
-                    <img src={thumbnail1} alt= "thumbnail1" />
-                    <img src={thumbnail2} alt= "thumbnail2" />
-                    <img src={thumbnail3} alt= "thumbnail3" />
-                    <img src={thumbnail4} alt= "thumbnail4" />
+                
+                        <a href="../images/image-product-1.jpg" data-attribute="SRL">
+                            <img src={thumbnail1} alt= "thumbnail1" />
+                        </a>
+
+                        <a href="../images/image-product-2.jpg" data-attribute="SRL">
+                            <img src={thumbnail2} alt= "thumbnail2" />
+                        </a>
+
+                        <a href="../images/image-product-2.jpg" data-attribute="SRL">
+                            <img src={thumbnail3} alt= "thumbnail3" />
+                        </a>
+
+                        <a href="../images/image-product-2.jpg" data-attribute="SRL">
+                            <img src={thumbnail4} alt= "thumbnail4" />
+                        </a>
+        
                 </div>
             </div>
 
